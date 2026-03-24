@@ -1,4 +1,4 @@
-FROM node:18
+FROM eclipse-temurin:21-jdk
 
 # Install Node + Java runtime (headless JRE for smaller footprint)
 RUN apt-get update && apt-get install -y openjdk-17-jre-headless && rm -rf /var/lib/apt/lists/*
